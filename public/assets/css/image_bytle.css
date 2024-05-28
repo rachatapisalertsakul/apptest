@@ -1,0 +1,49 @@
+    .gallery>img {
+        max-width: 100%;
+        width: 250px;
+        height: 250px;
+        border: solid;
+        margin: 0px 10px 10px 10px;
+        border-radius: 25px;
+
+    }
+
+    .gallery_land_location>img {
+        max-width: 100%;
+        width: 250px;
+        height: 250px;
+        border: solid;
+        margin: 0px 10px 10px 10px;
+        border-radius: 25px;
+
+    }
+
+    .item-photo__preview {
+        max-width: 100%;
+        width: 250px;
+        height: 250px;
+        border: solid;
+        margin: 0px 10px 10px 10px;
+        border-radius: 25px;
+        display: inline;
+    }
+
+    .img-profile {
+        max-width: 100%;
+        width: 250px;
+        height: 250px;
+        border: solid;
+        border-color: #dbdfea;
+        margin: 0px 10px 10px 10px;
+        border-radius: 25px !important;
+    }
+
+    .img-profile-list {
+        max-width: 100%;
+        width: 120px;
+        height: 120px;
+        border: solid;
+        border-color: #dbdfea;
+        margin: 0px 10px 10px 10px;
+        border-radius: 25px !important;
+    }
