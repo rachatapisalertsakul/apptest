@@ -28,6 +28,12 @@ class AppServiceProvider extends ServiceProvider
     {
         $menu = DB::table('menu')->get();
         $host = $request->getSchemeAndHttpHost();
+
+        if($this->app->environment('production')) {
+            \URL::forceScheme('https');
+        }
+
+        
         View::share(['menu'=> $menu,'host'=>$host]);
     }
 }
