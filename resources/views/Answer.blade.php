@@ -99,7 +99,7 @@
             responsive: {
                 details: !0
             },
-            dom: "Pfrtip",
+            dom: "BPfrtip",
             searchPanes: {
                 columns: [2, 3, 4],
                 initCollapsed: false,
