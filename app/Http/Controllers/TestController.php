@@ -16,6 +16,9 @@ class TestController extends Controller
 
     public function send_pretest(Request $request)
     {
+
+        // dd($request->all());
+
         $pretest = DB::table('pretest')->orderBy('choice_no', 'ASC')->get();
 
         $point = 0;
@@ -25,6 +28,10 @@ class TestController extends Controller
                 $point += 1;
             }
         }
+
+        // dd($point);
+        
+        // dd($request->$key);
 
         DB::table('test_history')->insert([
             'point' => $point,
@@ -40,9 +47,7 @@ class TestController extends Controller
         $result = DB::table('test_history')->orderBy('id_history','DESC')->first();
 
         return view('Result',compact('result'));
-        // dd($point);
-        dd($request->all());
-        dd($request->$key);
+       
     }
 
     public function post_test(){
